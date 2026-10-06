@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "clientutils",
+  "version": "${version}",
+  "name": "Client Utils",
+  "description": "Kit saving, big items, command keys and no fog.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.clientutils.ClientUtilsClient"]
+  },
+  "mixins": [
+    { "config": "clientutils.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
